@@ -1,0 +1,76 @@
+/* تأثير للكروت */
+
+.card {
+    transition: all .35s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .18);
+}
+
+/* تأثير للأزرار */
+
+.main-btn {
+    transition: .3s;
+}
+
+.main-btn:hover {
+    transform: scale(1.05);
+    background: #0B7A52 !important;
+}
+
+/* تأثير للصور */
+
+.image-hover {
+    overflow: hidden;
+}
+
+.image-hover img {
+    transition: .5s;
+}
+
+.image-hover:hover img {
+    transform: scale(1.1);
+}
+
+/* تأثير لعناصر القائمة */
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: .3s;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #B68B2D;
+}
+
+/* تأثير للعنوان */
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+
+    content: "";
+
+    width: 60%;
+
+    height: 4px;
+
+    background: #B68B2D;
+
+    position: absolute;
+
+    bottom: -10px;
+
+    right: 20%;
+
+    border-radius: 20px;
+
+}
